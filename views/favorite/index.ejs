@@ -1,0 +1,9 @@
+<ul>
+	<% if(typeof links !== 'undefined') { %>
+		<% links.forEach(function(info) { %>
+			<div class="well">
+				<h2><a href="<%= info.link %>" target="_blank"><%= info.title %></a></h2>
+			</div>
+		<% }); %>
+    <% } %>
+</ul>
